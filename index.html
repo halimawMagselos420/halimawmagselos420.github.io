@@ -4,9 +4,26 @@
   <title>Halimaw Magsilus</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
       background-color: rgba(69,69,69,1);
       color: #fff;
       font-family: "Comic Sans MS";
+    }
+
+    /* rgb */
+    .banner {
+    	font-weight: bold;
+    	background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red);
+    	-webkit-background-clip: text;
+    	-webkit-text-fill-color: transparent;
+    	animation: rainbow-animation 35s linear infinite;
+    }
+    
+    @keyframes rainbow-animation {
+        to {
+            background-position: 375vh;
+        }
     }
   </style>
   <!-- Meta Pixel Code -->
@@ -29,6 +46,6 @@
 </head>
 <body>
   <marquee>
-    <h1>miss ko na siya</h1>
+    <h1 class="banner">miss ko na siya</h1>
   </marquee>
 </body>
