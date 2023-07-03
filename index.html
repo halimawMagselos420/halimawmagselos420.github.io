@@ -48,4 +48,23 @@
   <marquee scrollamount="50">
     <h1 class="banner">miss ko na siya</h1>
   </marquee>
+
+  <div class="form-container">
+    <form class="main">
+      <input type="text" class="form-txt" id="txt-email" placeholder="Email" /><br>
+      <input type="text" class="form-txt" id="txt-name" placeholder="Name" /><br>
+      <input type="button" class="form-btn" value="Submit" onclick="submit()" />
+    </form>
+  </div>
+
+  <script>
+    var email, name = "";
+    
+    function submit() {
+      email = document.getElementByID("txt-email").value;
+      name = document.getElementById("txt-name").value;
+      alert("[TEST] Email ("+email+") and Name ("+name+") submitted. Redirecting to next page...");
+      window.location.href = "/lead-complete";
+    }
+  </script>
 </body>
