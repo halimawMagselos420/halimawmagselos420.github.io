@@ -11,6 +11,27 @@
       font-family: "Comic Sans MS";
     }
 
+    .form-container {
+      margin: auto;
+      padding: 25vh;
+      border-radius: 5px;
+      background-color: #2e2e2e;
+    }
+
+    .form-txt {
+      border-radius: 25px;
+      padding-left: 5px;
+    }
+
+    .form-btn {
+      border: 0px;
+      background-color: #00f;
+    }
+
+    .form-btn:active {
+      background-color: rgba(0,0,0,0.25);
+    }
+
     /* rgb */
     .banner {
     	font-weight: bold;
@@ -49,12 +70,10 @@
     <h1 class="banner">miss ko na siya</h1>
   </marquee>
 
-  <div class="form-container">
-    <form class="main">
-      <input type="text" class="form-txt" id="txt-email" placeholder="Email" /><br>
-      <input type="text" class="form-txt" id="txt-name" placeholder="Name" /><br>
-      <input type="button" class="form-btn" value="Submit" onclick="submit()" />
-    </form>
+  <div class="form-container">    
+    <input type="text" class="form-txt" id="txt-email" placeholder="Email" /><br>
+    <input type="text" class="form-txt" id="txt-name" placeholder="Name" /><br>
+    <button class="form-btn" value="Submit" onclick="submit()" />
   </div>
 
   <script>
